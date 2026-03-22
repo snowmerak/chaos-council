@@ -1,10 +1,12 @@
 {
   "name": "chaos-council",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Chaos Council - AI debate with unhinged characters",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "repository": {
     "type": "git",
@@ -13,5 +15,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "openai": "^4.85.4"
+  }
 }

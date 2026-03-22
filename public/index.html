@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaos Council — 광기의 AI 토론회</title>
+  <meta name="description" content="5명의 나사 빠진 AI 캐릭터들이 벌이는 혼돈의 토론회" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="scanline"></div>
+  <div class="noise"></div>
+
+  <header id="header">
+    <div class="logo-area">
+      <h1 class="glitch" data-text="CHAOS COUNCIL">CHAOS COUNCIL</h1>
+      <p class="subtitle">광기의 AI 토론회</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Input Section -->
+    <section id="input-section" class="glass-card">
+      <h2 class="section-title">🔥 토론 주제를 던져라</h2>
+      <div class="input-group">
+        <input
+          type="text"
+          id="topic-input"
+          placeholder="예: 피자에 파인애플을 올려야 하는가?"
+          maxlength="200"
+          autocomplete="off"
+        />
+        <button id="start-btn" type="button">
+          <span class="btn-text">소환</span>
+          <span class="btn-icon">⚡</span>
+        </button>
+      </div>
+      <div class="char-preview">
+        <span class="char-chip" style="--c: #e040fb">🎭</span>
+        <span class="char-chip" style="--c: #ff6e40">🎨</span>
+        <span class="char-chip" style="--c: #69f0ae">🕵️</span>
+        <span class="char-chip" style="--c: #ffd740">👑</span>
+        <span class="char-chip" style="--c: #40c4ff">🔮</span>
+      </div>
+    </section>
+
+    <!-- Progress -->
+    <div id="progress-bar-container" class="hidden">
+      <div id="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+      <span id="progress-text"></span>
+    </div>
+
+    <!-- Debate Timeline -->
+    <section id="debate-timeline" class="hidden"></section>
+
+    <!-- Results -->
+    <section id="results-section" class="hidden">
+      <h2 class="section-title result-title">🏆 최종 결과</h2>
+      <div id="results-list"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
